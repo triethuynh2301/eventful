@@ -1,0 +1,43 @@
+### GET /weatherforecast
+
+GET http://localhost:5000/WeatherForecast
+Content-Type: application/json
+
+### GET /activities
+
+GET http://localhost:5000/api/activities
+Content-Type: application/json
+
+### GET /activities/:id
+
+GET http://localhost:5000/api/activities/6a4cbf84-3225-4a52-962e-a43b1202d331
+Content-Type: application/json
+
+### POST /activities
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "id": "b48bc621-e64b-4bc3-b6c6-e548fa81f12f",
+  "title": "Test Create Activity",
+  "description": "This is a test to create new event",
+  "category": "Culture",
+  "date": "2022-05-04T17:02:27.727915",
+  "city": "Houston",
+  "venue": "Galleria Mall"
+}
+
+### PATCH /activities
+
+PATCH http://localhost:5000/api/activities/b48bc621-e64b-4bc3-b6c6-e548fa81f12f
+Content-Type: application/json
+
+{
+  "title": "Test Update Activity",
+  "description": "This is a test to update existing event",
+  "category": "Culture",
+  "date": "2022-05-04T17:02:27.727915",
+  "city": "Houston",
+  "venue": "Galleria Mall"
+}
